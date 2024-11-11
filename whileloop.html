@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //prime number
+        let num1=4
+        i=2
+        while(i<num1){
+            if(num1%i==0){
+                console.log("Not a prime Number")
+                break;
+            }else{
+                console.log(`${num1} is a prime number`)
+            }
+            i++
+        }
+        // sum of even numbers
+        let n = 1
+        let s = 0
+        while (n <= 50) {
+            if (n % 2 == 0)
+                s += n;
+            n++
+        }
+        console.log(s)
+
+        //count the digits
+
+        let num = String(12345)
+        count = 0
+        i = 0
+        while (i < num.length) {
+            count++
+            i++
+        }
+        console.log(count)
+
+        //smallest digit
+        var number = String(27649)
+        let min = number[0]
+        i = 1
+        while (i < number.length) {
+
+            if (Number(number[i] <= min)) {
+                min = number[i]
+            }
+            i++
+        }
+        console.log(min)
+
+        //sum of odd digits
+        var nums = prompt("enter a number:")
+        sum = 0
+        i = 0
+        while (i < nums.length) {
+            if (nums[i] % 2 !== 0) {
+                sum = sum + +nums[i]
+            }
+            i++
+        }
+        console.log(sum)
+
+        //perfect number
+        let numb = Number(prompt("enter the number:"))
+        sum = 0
+        i = 1
+        while (i < numb) {
+            if (numb % i == 0) {
+                sum = sum + i
+            }
+            i++
+        }
+        if (numb == sum) {
+            console.log("perfect number")
+
+        }
+        else {
+            console.log(" not a perfect number")
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //perfect number
+
+        // let num=+prompt("enter a number:")
+        // i=1
+        // sum=0
+        // while(i<num){
+        //     if(num%i==0){
+        //         sum=sum+i
+        //         i++
+        //         if(num==sum){
+        //             console.log("it is a perfect number")
+        //         }
+        //     }
+        //     else{
+        //         console.log("it is not perfect number")
+        //     }
+
+        // }
+    </script>
+</body>
+
+</html>
